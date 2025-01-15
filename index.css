@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 620px;
+  height: 620px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+}
+.board {
+  width: 620px;
+  height: 620px;
+  position: relative;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+li {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+li:hover {
+  background-color: #ffeb3b;
+  transform: scale(1.05);
+}
+li:active {
+  transform: scale(0.95);
+}
+
+.winner-alert {
+  display: none;
+  width: 630px;
+  height: 630px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 15px;
+  padding: 20px;
+  /* background-color: rgba(44, 37, 37, 0.86); */
+}
+
+.winner-name {
+  display: none;
+  font-size: 60px;
+  color: #ffd828;
+  font-weight: bold;
+  /* position: fixed; */
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* text-shadow: 2px 2px 8px rgba(153, 113, 3, 0.7);  */
+  /* padding: 20px; */
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  /* z-index: 1000;
+  margin-top: 20px; */
+}
+
+/* .second-lottie {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10002;
+  margin-top: 30px;
+} */
